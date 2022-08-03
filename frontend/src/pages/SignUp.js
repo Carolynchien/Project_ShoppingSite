@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { BASE_URL } from '../globals'
 
 const SignUP = () => {
   const [userSignUpInput, setuserSignUpInput] = useState({
@@ -15,7 +16,10 @@ const SignUP = () => {
   const submitUserInput = async (e) => {
     e.preventDefault()
     console.log(userSignUpInput)
-    const newUser = await axios.post(`/user/createuser`, userSignUpInput)
+    const newUser = await axios.post(
+      `${BASE_URL}/user/createuser`,
+      userSignUpInput
+    )
     console.log(newUser)
     if (newUser) {
       e.target.reset()

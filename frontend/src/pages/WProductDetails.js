@@ -2,6 +2,7 @@ import { useEffect, useState, useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import { UserContext } from '../UserContext'
+import { BASE_URL } from '../globals'
 
 const initstate = {
   product: '',
@@ -28,7 +29,9 @@ const WProduct = (props) => {
   useEffect(() => {
     setProductId(id)
     async function getProductById() {
-      const product = await axios.get(`/products/details/${productId}`)
+      const product = await axios.get(
+        `${BASE_URL}/products/details/${productId}`
+      )
       const productDetail = product.data.product
       console.log(productDetail)
       if (productDetail != undefined) {
@@ -68,7 +71,6 @@ const WProduct = (props) => {
   }, [cart])
 
   console.log(cart)
-  
 
   const addToCart = (item) => {
     console.log(cart)

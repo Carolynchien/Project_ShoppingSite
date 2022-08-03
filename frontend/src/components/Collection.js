@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-
+import { BASE_URL } from '../globals'
 import { useNavigate } from 'react-router-dom'
 import React from 'react'
 import { useEffect, useState } from 'react'
@@ -19,7 +19,7 @@ const Collection = () => {
 
   useEffect(() => {
     const getCollection = async () => {
-      let res = await axios.get(`/getCollection`)
+      let res = await axios.get(`${BASE_URL}/getCollection`)
       let products = await res.data
       console.log(products)
       setCollection(products.products)

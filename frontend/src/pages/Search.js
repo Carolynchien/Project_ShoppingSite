@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import { BASE_URL } from '../globals'
 const Search = () => {
   const [searchInput, setsearchInput] = useState('')
   const [products, setProduct] = useState([])
@@ -9,7 +10,10 @@ const Search = () => {
   const subMit = async (e) => {
     e.preventDefault()
     if (searchInput != '') {
-      const products = await axios.post(`/searchproduct`, searchInput)
+      const products = await axios.post(
+        `${BASE_URL}/searchproduct`,
+        searchInput
+      )
       console.log(products)
       setProduct(products.data)
       console.log(`afterset`, products)

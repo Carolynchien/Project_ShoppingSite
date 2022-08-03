@@ -2,13 +2,14 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import { BASE_URL } from '../globals'
 
 const Women = () => {
   const [women, setwomen] = useState([])
 
   useEffect(() => {
     const getwomen = async () => {
-      let res = await axios.get(`/products`)
+      let res = await axios.get(`${BASE_URL}/products`)
       let products = await res.data
       console.log(products)
       setwomen(products.products)

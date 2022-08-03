@@ -2,13 +2,14 @@ import { useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { UserContext } from '../UserContext'
+import { BASE_URL } from '../globals'
 
 const Login = () => {
   const [userLogInInput, setuserLogInInput] = useState({
     Email: '',
     Password: ''
   })
-  
+
   const [success, setSuccess] = useState()
   const { user, setUser } = useContext(UserContext)
   let navigate = useNavigate()
@@ -19,7 +20,7 @@ const Login = () => {
 
   const loginIn = async (e) => {
     e.preventDefault()
-    const user = await axios.post(`/finduser`, userLogInInput)
+    const user = await axios.post(`${BASE_URL}/finduser`, userLogInInput)
     console.log(user)
     if (user.data != null) {
       setUser(user.data)

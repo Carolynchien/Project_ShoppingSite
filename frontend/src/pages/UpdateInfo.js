@@ -2,6 +2,7 @@ import { UserContext } from '../UserContext'
 import { useContext, useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import { BASE_URL } from '../globals'
 
 const UpdateInfo = () => {
   const { user, setUser } = useContext(UserContext)
@@ -22,7 +23,10 @@ const UpdateInfo = () => {
 
     console.log(userUpdateInput)
 
-    const newUser = await axios.put(`/user/${user._id}`, userUpdateInput)
+    const newUser = await axios.put(
+      `${BASE_URL}/user/${user._id}`,
+      userUpdateInput
+    )
     console.log(newUser)
     if (newUser.status === 200) {
       console.log(newUser.data)
