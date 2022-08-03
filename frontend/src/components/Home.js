@@ -11,6 +11,8 @@ const Home = () => {
       <WomenPg />
       <Sales />
 
+      <i class="fa-regular fa-cart-shopping"></i>
+
       <footer className="footer-home">
         <ul>
           <li>

@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Shopping } from '@fortawesome/free-solid-svg-icons'
+
 import { UserContext } from '../UserContext'
 import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { MdShoppingCart } from 'react-icons/fa'
 
 const Header = () => {
   const { user, setUser, cartItemCount, setcartItemCount } =
@@ -56,7 +56,6 @@ const Header = () => {
         </ul>
         {/* </div> */}
       </header>
-      <div></div>
     </div>
   )
 }

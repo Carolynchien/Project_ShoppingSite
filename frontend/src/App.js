@@ -33,7 +33,7 @@ function App() {
       <main>
         <UserContext.Provider value={providerValue}>
           <Routes>
-            <Route exact path="/home" element={<Home />} />
+            <Route exact path="/" element={<Home />} />
 
             <Route exact path="/women" element={<Women />} />
             <Route

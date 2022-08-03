@@ -11,6 +11,7 @@ const ProductsSchema = new Schema({
   rating: { type: String, required: true },
   inStock: { type: Number, required: true },
   isOnsale: { type: Boolean, default: false, required: true },
+  isCollection: { type: Boolean, default: false, required: true },
   comments: { type: mongoose.Types.ObjectId, ref: 'Comment' }
 })
 

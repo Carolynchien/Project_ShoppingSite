@@ -45,7 +45,7 @@ const main = async () => {
       description: 'Round neck T-shirt with short sleeves.',
       category: 'TOP',
       image:
-        'https://static.zara.net/photos///2022/I/0/1/p/3519/030/629/2/w/750/3519030629_1_1_1.jpg?ts=1658476179579',
+        'https://static.zara.net/photos///2022/I/0/1/p/4174/460/800/2/w/563/4174460800_1_1_1.jpg?ts=1658226115662',
       rating: '3.5',
 
       inStock: 15
@@ -161,6 +161,79 @@ const main = async () => {
         'https://static.zara.net/photos///2022/I/0/1/p/7881/650/643/17/w/850/7881650643_1_1_1.jpg?ts=1655294307375',
       rating: '3.4',
       inStock: 20
+    },
+
+    {
+      product: 'LINEN SHIRT WITH POCKETS',
+      price: 56.9,
+      description:
+        'Shirt with lapel collar and long sleeves. Front patch pocket. Front button closure.',
+      category: 'DRESS',
+      image:
+        'https://static.zara.net/photos///2022/I/0/1/p/8372/034/250/3/w/1024/8372034250_2_4_1.jpg?ts=1655454592482',
+      rating: '3.7',
+      inStock: 122,
+      isCollection: true
+    },
+    {
+      product: 'LONG PRINT DRESS',
+      price: 119.0,
+      description:
+        'Shirt with lapel collar and long sleeves. Front patch pocket. Front button closure.',
+      category: 'BLAZER',
+      image:
+        'https://static.zara.net/photos///2022/I/0/1/p/5598/045/500/2/w/1024/5598045500_1_1_1.jpg?ts=1655449301432',
+      rating: '3.6',
+      inStock: 20,
+      isCollection: true
+    },
+    {
+      product: 'LONG BALLOON SKIRT',
+      price: 69.9,
+      description:
+        'High waisted skirt with ruching at waist. Front slit at hem. Side hidden in-seam zip closure.',
+      category: 'SKIRT',
+      image:
+        'https://static.zara.net/photos///2022/I/0/1/p/8255/180/630/2/w/1024/8255180630_1_1_1.jpg?ts=1658479566264',
+      rating: '3.9',
+      inStock: 50,
+      isCollection: true
+    },
+    {
+      product: 'SATIN EFFECT MIDI DRESS',
+      price: 119.0,
+      description:
+        'Straight neck midi dress with adjustable spaghetti straps. Back hidden in-seam zip closure.',
+      category: 'DRESS',
+      image:
+        'https://static.zara.net/photos///2022/I/0/1/p/3067/361/530/2/w/1024/3067361530_1_1_1.jpg?ts=1657728789735',
+      rating: '3.1',
+      inStock: 10,
+      isCollection: true
+    },
+    {
+      product: 'CUT OUT PRINTED DRESS',
+      price: 119.0,
+      description:
+        'Dress made of viscose with V-neck and long balloon sleeves. Side cut out detail. Back hidden in-seam zip closure.',
+      category: 'DRESS',
+      image:
+        'https://static.zara.net/photos///2022/I/0/1/p/7631/044/330/2/w/1024/7631044330_1_1_1.jpg?ts=1657190085834',
+      rating: '3.2',
+      inStock: 60,
+      isCollection: true
+    },
+    {
+      product: 'BLAZER WITH TUXEDO COLLAR',
+      price: 119.9,
+      description:
+        'Long dress with round collar and adjustable tied V-neckline. Below-the-elbow length sleeves with elastic cuffs. Metallic thread appliqué.',
+      category: 'BLAZER',
+      image:
+        'https://static.zara.net/photos///2022/I/0/1/p/2766/878/712/2/w/1024/2766878712_1_1_1.jpg?ts=1655289758920',
+      rating: '3.7',
+      inStock: 20,
+      isCollection: true
     }
   ]
 

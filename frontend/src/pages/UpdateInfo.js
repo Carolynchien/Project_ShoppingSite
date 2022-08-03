@@ -50,7 +50,7 @@ const UpdateInfo = () => {
 
     setDeleteUser(true)
     setTimeout(() => {
-      navigate(`/home`)
+      navigate(`/`)
     }, 3000)
   }
 
