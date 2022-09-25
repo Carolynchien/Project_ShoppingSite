@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import video1 from './video.mp4'
+import video1 from '../assets/video.mp4'
 import { useNavigate } from 'react-router-dom'
 
 const Sales = () => {
