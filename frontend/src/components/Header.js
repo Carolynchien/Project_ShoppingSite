@@ -33,7 +33,7 @@ const Header = () => {
             <Link to="/search">SEARCH</Link>
           </li>
           <li>
-            <Link to="/home">HOME</Link>
+            <Link to="/">HOME</Link>
           </li>
           <li onClick={updateInfo}>
             {user ? <i class="fa-solid fa-user"></i> : ''}
