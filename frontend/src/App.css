@@ -267,18 +267,24 @@ ul li a:hover {
 .product-detail-image {
   width: 700px;
   height: 500x;
+  min-width: 600px;
 }
 .product-detail-image img {
   width: 45%;
 }
 .product-detail-content {
   width: 250px;
+  min-width: 250px;
 }
 
 .product-detail-main {
   height: 100vh;
   display: flex;
+  width: 80%;
   align-items: center;
+  justify-content: space-between;
+
+  padding: 0 50px;
 }
 
 .product-add-button {
